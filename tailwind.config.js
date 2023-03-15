@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["Montserrat", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        black: "rgba(18, 18, 18, 1)",
+      },
+    },
   },
   plugins: [],
-}
+};

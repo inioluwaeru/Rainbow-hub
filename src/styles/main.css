@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+.home {
+  background-image: url(/src/img/bg-img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active {
+  color: rgb(125, 125, 216);
+}
+.head-text {
+  font-size: 6rem;
+}
+.head-texte {
+  font-size: 5rem;
+}
+.bg {
+  background-color: #121212;
+}
+
 @tailwind base;
 
 @tailwind components;
