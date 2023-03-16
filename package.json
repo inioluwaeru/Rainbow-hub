@@ -2,7 +2,8 @@
   "name": "rainbowhub",
   "description": "The landing page of Rainbow Hub",
   "scripts": {
-    "dev": "rm -rf ./dist && tailwindcss -i ./src/styles/main.css -o ./dist/styles/main.css --watch"
+    "dev": "rm -rf ./dist && tailwindcss -i ./src/styles/main.css -o ./dist/styles/main.css --watch",
+    "build": "tailwindcss -i ./src/styles/main.css -o ./dist/styles/main.css --minify"
   },
   "devDependencies": {
     "prettier": "^2.8.4",
