@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 
 .home {
+    height: calc(100vh*0.7);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,6 +79,26 @@
         border: none;
         font-size: 20px;
       }
+}
+
+@media (min-width: 768px) {
+    .promo-text {
+        padding-left: 100px;
+    }
+    .promo-text:before {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: rgba(97, 156, 226, 1);
+        position: absolute;
+        left: 0;
+        top: 52%;
+    }
+}
+
+.footer-card {
+    background: rgba(43, 69, 99, 1);
 }
 
 @tailwind base;
