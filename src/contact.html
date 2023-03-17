@@ -4,34 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/dist/styles/main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        .home {
-            background-image: url(img/bg-img.png);
-        }
-
-        .active {
-            color: rgb(125, 125, 216);
-        }
-        .head-text{
-            font-size: 6rem;
-        }
-        .head-texte{
-            font-size: 5rem;
-        }
-        .bg{
-            background-color:  #121212;
-        }
-    </style>
-    <title>Document</title>
+    <title>Contact Us - Rainbow Hub</title>
 </head>
 <body class="bg text-white">
-    <header class="absolute sticky inset-x-0 top-0 z-50">
+    <header class="sticky inset-x-0 top-0 z-50">
         <nav class="flex items-center bg-black justify-between p-5 lg:px-20" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -39,36 +17,34 @@
                 </a>
             </div>
             <div class="lg:flex lg:gap-6">
-                <a href="#" class="text-xl font-semilight leading-6 text-white active hover:bg-sky-700">Home</a>
-                <a href="#" class="text-xl font-semilight leading-6 text-white">About</a>
-                <a href="#" class="text-xl font-semilight leading-6 text-white">Our Team</a>
-                <a href="#" class="text-xl font-semilight leading-6 text-white">Portfolio</a>
-                <a href="#" class="text-xl font-semilight leading-6 text-white">Contact</a>
+                <a href="/" class="text-xl font-semilight leading-6 text-white">Home</a>
             </div>
         </nav>
     </header>
     <div class="px-40 pt-20">
-            <h1 class="text-6xl pb-10 pt-20">Get in Touch</h1>
+            <h1 class="text-6xl pb-20 pt-10">Get in Touch</h1>
             <div class="relative">
                 <div>
-                    <input type="text" placeholder="Name*" class="w-3/5 mb-16 pl-5 text-xl bg-transparent border-b border-gray-700 "><br>
-                    <input type="text" placeholder="Email*" class="w-3/5 mb-16 pl-5 text-xl bg-transparent border-b border-gray-700 "><br>
-                    <input type="text" placeholder="Message*" class="w-3/5 mb-16 pl-5 text-xl bg-transparent border-b border-gray-700 "><br>
+                    <form id="contact-form" action="https://formspree.io/f/xzbqvlpz" method="POST">
+                        <input type="text" name="name" placeholder="Name*" class="w-3/5 mb-16 pl-5 text-xl bg-transparent border-b border-gray-700 " />
+                        <input type="email" name="email" placeholder="Email*" class="w-3/5 mb-16 pl-5 text-xl bg-transparent border-b border-gray-700 " />
+                        <textarea name="message" placeholder="Message*" class="w-3/5 mb-16 pl-5 text-xl bg-transparent border-b border-gray-700 "></textarea>
+                    </form>
                 </div>
                 <div class="flex flex-col absolute top-0 right-0 gap-5">
+                    <!-- <i class="fas fa-envelope"></i>
                     <i class="fas fa-envelope"></i>
                     <i class="fas fa-envelope"></i>
                     <i class="fas fa-envelope"></i>
                     <i class="fas fa-envelope"></i>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope"></i> -->
                 </div>
             </div>
             <div class="flex justify-between">
-                <a href=""><button class="w-32 h-10 rounded-full bg-blue-700">Submit &#8594</button></a>
+                <button type="submit" form="contact-form" class="w-32 h-10 rounded-full bg-blue-700">Submit &#8594</button>
                 <div class="flex flex-col text-gray-700">
-                    <p>email@rainbowhub.co</p>
-                    <p>+234 0 810 123 4567</p>
+                    <p>mail@rainbowhub.studio</p>
+                    <p>+234 (0) 703 941 3016</p>
                 </div>
             </div>
         <div>
@@ -78,7 +54,7 @@
     <footer class="bg text-gray-700 flex justify-between px-10 pb-5 pt-10">
         <div class="flex">
             <p class="pr-10">©</p>
-            <p>2020. Rainbow Hub</p>
+            <p>2023 Rainbow Hub</p>
         </div>
         <div>
             <i class="fas fa-envelope"></i>
